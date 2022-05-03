@@ -1,0 +1,92 @@
+:root {
+  --yellow: #FFC834;
+  --red: #F0562E;
+  --green: #005A39;
+}
+
+#news {
+  background-color: #FEF9E4;
+}
+
+#news * {
+  box-sizing: border-box;
+}
+
+// hide hero on paged pages
+.paged .news-hero {
+  display: none;
+}
+
+.news-hero-container {
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.news-hero-container .news-hero-image {
+  background-position: center;
+  background-size: cover;
+  height: 642px;
+  width: 57.6%
+}
+
+.news-hero-container .news-hero-content {
+  background-color: var(--green);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 86px;
+  width: 43.295%
+}
+
+.news-hero-content h1 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.news-hero-content h3 {
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.news-hero-content p {
+  line-height: 20px;
+}
+
+#main-content.news {
+  padding: 108px 1rem;
+}
+
+.news h2 {
+  color: var(--green);
+  font-size: 38px;
+  line-height: 39px;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.news .news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1356px;
+  width: 100%;
+}
+
+.news-list article {
+  max-width: 400px;
+  width: 100%;
+}
+
+.news-list .news-item-image {
+  background-color: gray;
+  background-position: center;
+  background-size: cover;
+  height: 242px;
+}

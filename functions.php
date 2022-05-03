@@ -28,14 +28,12 @@ add_action( 'widgets_init', 'foundation_widgets_init' );
 
 
 function add_resources() {
-	// wp_deregister_script('jquery');
-	// wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+  wp_enqueue_style( 'news-styles', get_stylesheet_directory_uri() . '/css/news.css', '', 'all' );
 
 }
 add_action('wp_enqueue_scripts', 'add_resources');
 
-add_theme_support( 'menus' );	
-	
+add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' ); 
 
 // Use Single Template
