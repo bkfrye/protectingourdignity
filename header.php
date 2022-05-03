@@ -31,7 +31,7 @@
 	<title><?php wp_title(''); echo ' | ';  bloginfo( 'name' ); ?></title>
   <?php  } ?>
 
-<?php wp_enqueue_script('jquery'); ?>
+
 <?php wp_head(); ?>
 
 
