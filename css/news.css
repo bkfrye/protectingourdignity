@@ -12,11 +12,6 @@
   box-sizing: border-box;
 }
 
-// hide hero on paged pages
-.paged .news-hero {
-  display: none;
-}
-
 .news-hero-container {
   display: flex;
   max-width: 1920px;

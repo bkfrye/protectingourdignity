@@ -11,9 +11,10 @@ $sticky = get_option( 'sticky_posts' );
 
 	if ( isset( $sticky[0] ) ) :
 ?>
-<body <?php if (is_paged()) : echo 'class="paged"'; endif; ?>>
+<body>
 	<?php include("includes/main-nav.php"); ?>
 	<div id="news">
+		<?php if (is_paged()) : ''; else :?>
 		<section class="news-hero">
 			<div class="news-hero-container">
 				<div class="news-hero-image" style="background-image: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' ); ?>)"></div>
@@ -34,6 +35,7 @@ $sticky = get_option( 'sticky_posts' );
 				</div>
 			</div>
 		</section>
+		<?php endif; ?>
 	<?php endif; ?>
 
 	<div id="main-content" class="news">
