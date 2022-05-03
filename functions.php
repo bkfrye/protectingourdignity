@@ -29,7 +29,7 @@ add_action( 'widgets_init', 'foundation_widgets_init' );
 
 function add_resources() {
 	// wp_deregister_script('jquery');
-	// wp_enqueue_script('jq', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+	// wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
 
 }
 add_action('wp_enqueue_scripts', 'add_resources');
@@ -44,14 +44,14 @@ add_theme_support( 'post-thumbnails' );
 //   create_function('$t', 'foreach( (array) get_the_category() as $cat ) { if ( file_exists(TEMPLATEPATH . "/single-{$cat->term_id}.php") ) return TEMPLATEPATH . "/single-{$cat->term_id}.php"; } return $t;' )
 // );
 
-add_filter(
-  'single_template',
-  function ($t) {
-    foreach( get_the_category() as $cat ) { 
-      if ( file_exists(TEMPLATEPATH . "/single-{$cat->term_id}.php") ) return TEMPLATEPATH . "/single-{$cat->term_id}.php"; } 
-      return $t;
-  }
-);
+// add_filter(
+//   'single_template',
+//   function ($t) {
+//     foreach( get_the_category() as $cat ) { 
+//       if ( file_exists(TEMPLATEPATH . "/single-{$cat->term_id}.php") ) return TEMPLATEPATH . "/single-{$cat->term_id}.php"; } 
+//       return $t;
+//   }
+// );
 
 // Menu
 function wpb_custom_new_menu() {
