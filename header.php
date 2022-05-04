@@ -27,15 +27,12 @@
 
   <?php
   if (is_front_page()) { ?>
-    <title><?php echo '';
-            bloginfo('name'); ?></title>
+    <title><?php bloginfo('name'); ?></title>
   <?php  } ?>
 
   <?php
   if (!is_front_page()) { ?>
-    <title><?php wp_title('');
-            echo ' | ';
-            bloginfo('name'); ?></title>
+    <title><?php wp_title(' | ', true, 'right')  . bloginfo('name'); ?></title>
   <?php  } ?>
 
 
