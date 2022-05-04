@@ -1,3 +1,5 @@
+</body>
+
 <footer id="foot" class="before after">
   <div class="wrapper-extra-wide wrapper rel flex space-btwn">
     <div class="col logo-col">
