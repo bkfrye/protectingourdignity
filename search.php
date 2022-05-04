@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<body id="generic" class="left relative search-page search">
-    <?php include("includes/main-nav.php"); ?>
+<!-- <body id="generic" class="left relative search-page search"> -->
 	<main class="sticky">
 		
 		

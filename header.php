@@ -30,3 +30,14 @@
 
   <?php wp_head(); ?>
 </head>
+
+<body <?php body_class(); ?>>
+  <?php include("includes/main-nav.php"); ?>
+
+	<div class="sticky">
+		<div id="social-share" class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px;">
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+	</div>
