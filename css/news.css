@@ -204,6 +204,11 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0 8px;
+  transition: color 180ms ease-in-out;
+}
+
+.pagination .pagination-wrapper a:hover {
+  color: var(--green);
 }
 
 .pagination .page-numbers {
