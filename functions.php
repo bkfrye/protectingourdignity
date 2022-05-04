@@ -14,10 +14,10 @@ function foundation_widgets_init() {
 }
 add_action( 'widgets_init', 'foundation_widgets_init' );
 
-
 function add_resources() {
+  wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/style.css', '', 'all' );
   wp_enqueue_style( 'news-styles', get_stylesheet_directory_uri() . '/css/news.css', '', 'all' );
-
+  wp_enqueue_style( 'news-styles', 'https://use.typekit.net/oqv2skg.css', '', 'all' );
 }
 add_action('wp_enqueue_scripts', 'add_resources');
 

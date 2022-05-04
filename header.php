@@ -17,14 +17,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-  <!-- Css -->
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home-half.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/generic-left.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/generic-center.css">
-  <link rel="stylesheet" href="https://use.typekit.net/oqv2skg.css">
-
-
+  
   <?php
   if (is_front_page()) { ?>
     <title><?php bloginfo('name'); ?></title>
