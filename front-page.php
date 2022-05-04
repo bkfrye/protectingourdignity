@@ -1,18 +1,3 @@
-<?php
-
-
-
-/*
-
-
-
-Template Name: Home- Half Hero
-
-
-
-*/?>
-
-
 <?php get_header(); ?>
 
 
