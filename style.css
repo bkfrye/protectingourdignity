@@ -33,7 +33,9 @@ body .trp-language-switcher:after {
 	position:absolute;
 }
 header#site {
-	position:relative;z-index:600;
+	position:relative;
+    z-index:600;
+    background-color: #FEF9E4;
 }
 #home-half .fl-builder-content .fl-row#fifty-fifty-left.other .fl-row-content-wrap {
 	padding:60px 0px 120px 0px;
@@ -3199,11 +3201,11 @@ background: rgb(52, 107, 255) !important;
     border-radius: 33px;
 }
 
-/*
+
 #lang-switch {
-	padding-left:20px;
+    width: 183px;
 }
-*/
+
 #hero p a, nav#main ul.menu > li.button a {
 	padding:7px 25px;
 }
