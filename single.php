@@ -11,8 +11,6 @@
     <a class="a2a_button_linkedin"></a>
     <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 </div>
-
-<script async src="https://static.addtoany.com/menu/page.js"></script>
 		
 		<!-- Full Hero -->
 		<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>

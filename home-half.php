@@ -27,8 +27,6 @@ Template Name: Home- Half Hero
     <a class="a2a_button_linkedin"></a>
     <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 </div>
-
-<script async src="https://static.addtoany.com/menu/page.js"></script>
 		
 		
 
