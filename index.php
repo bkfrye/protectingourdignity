@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-
 <div id="generic" class="left relative">
-		
 	<!-- Full Hero -->
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 		if ( has_post_thumbnail() ) { ?>
@@ -12,20 +10,17 @@
 		<?php } ?>
 			<div class="overlay"></div>
 				<div class="wrapper-small content">
-					<h1><?php the_title(); ?></h1>
+					<?php the_title('<h1>', '</h1>'); ?>
 				</div>
 			</div>
 
 			<!-- Beaver Builder -->
 			<div id="main-content" class="before after">
-				<?php if (have_posts()) : ?>
-				<?php while (have_posts()) : the_post(); ?>
-
-					<?php the_content(); ?>
-
-				<?php endwhile; ?>
-				<?php else : ?>
-				<?php endif; ?>
+				<?php if (have_posts()) :
+					while (have_posts()) : the_post();
+						the_content();
+					endwhile;
+				endif; ?>
 			</div>
 </div>
 

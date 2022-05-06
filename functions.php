@@ -1,8 +1,8 @@
 <?php
 
 function foundation_widgets_init() {
-
-	register_sidebar( array(
+  
+  register_sidebar( array(
     'name' => __( 'Footer Column #1', 'twentytwelve' ),
     'id' => 'footer1',
     'description' => __( '', '' ),

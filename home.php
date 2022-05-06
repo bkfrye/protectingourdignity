@@ -2,14 +2,14 @@
 get_header();
 
 $sticky = get_option( 'sticky_posts' );
-	$args = array(
-			'posts_per_page' => 1,
-			'post__in' => $sticky,
-			'ignore_sticky_posts' => 1
-	);
-	$query = new WP_Query( $args );
+$args = array(
+	'posts_per_page' => 1,
+	'post__in' => $sticky,
+	'ignore_sticky_posts' => 1
+);
+$query = new WP_Query( $args );
 
-	if ( isset( $sticky[0] ) ) :
+if ( isset( $sticky[0] ) ) :
 ?>
 
 <div id="news">
@@ -26,8 +26,7 @@ $sticky = get_option( 'sticky_posts' );
 						the_excerpt();
 
 						echo '<div class="news-btn"><a href="' . get_the_permalink() . '">Learn More <span><svg width="18.545" height="18.545" viewBox="0 0 18.545 18.545"><path d="M14.668,10.233a.864.864,0,0,1,1.217,0L20.138,14.5a.859.859,0,0,1,.027,1.186l-4.19,4.2a.859.859,0,1,1-1.217-1.213l3.562-3.615-3.651-3.615A.85.85,0,0,1,14.668,10.233Z" transform="translate(-7.415 -5.295)"/><path d="M3.375,12.648a9.273,9.273,0,1,0,9.273-9.273A9.271,9.271,0,0,0,3.375,12.648Zm1.427,0A7.843,7.843,0,0,1,18.193,7.1,7.843,7.843,0,1,1,7.1,18.193,7.779,7.779,0,0,1,4.8,12.648Z" transform="translate(-3.375 -3.375)"/></svg></span></a></div>';
-					endwhile;
-					endif;
+					endwhile;endif;
 					wp_reset_postdata();
 				?>
 				<!-- end add in loop -->
